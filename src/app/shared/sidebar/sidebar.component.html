@@ -1,0 +1,13 @@
+<h2>Busquedas</h2>
+<hr>
+<ul>
+    <li 
+        *ngFor="let route of routes" 
+        routerLink={{route.path}} 
+        routerLinkActive="active" 
+        [routerLinkActiveOptions]="{exact: true}" 
+        class="list-group-item"
+    >
+        {{route.name}}
+    </li>
+</ul>
